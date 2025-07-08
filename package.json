@@ -1,0 +1,38 @@
+{
+  "name": "personal-timer",
+  "version": "0.1.2",
+  "description": "Pomodoro Timer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "package": "electron-packager . PomodoroZenit --platform=win32 --arch=x64 --icon=img/enso5.ico --overwrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablodorin/PersonalTimer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablodorin/PersonalTimer/issues"
+  },
+  "homepage": "https://github.com/pablodorin/PersonalTimer#readme",
+  "devDependencies": {
+    "electron": "^9.4.4",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.pablodorin.zentimer",
+    "productName": "Zen Timer",
+    "win": {
+        "target": ["nsis", "msi"],
+        "icon": "img/icon.ico"
+    },
+    "directories": {
+      "buildResources": "img"
+    }
+  }
+}

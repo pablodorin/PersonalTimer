@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z3N1T Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/icon.ico">
+</head>
+
+<body>
+    <div class="timer-container">
+        <h1>POMODORO TIMER</h1>
+        <div class="preset-buttons">
+            <button id="btn25">25 min</button>
+            <button id="btn50">50 min</button>
+        </div>
+
+        <input id="timeInput" type="number" placeholder="Minutes" min="1">
+        <div id="display">00:00</div>
+        <audio id="startSound" src="./audio/zen-tone-deep-202555.mp3" preload="auto"></audio>
+        <audio id="startSound2" src="./audio/zen-tone-mid-202556.mp3" preload="auto"></audio>
+        <audio id="alarmSound" src="./audio/koto-hit-106066.mp3" preload="auto"></audio>
+
+        <div class="buttons">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

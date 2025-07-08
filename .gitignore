@@ -1,0 +1,34 @@
+# Node dependencies
+node_modules/
+
+# Electron build output
+build/
+dist/
+*.exe
+*.msi
+*.zip
+*.dmg
+
+# Electron-specific output folders
+*.blockmap
+*.snap
+*.AppImage
+*.deb
+*.rpm
+
+# Platform-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+
+# Otros binarios o directorios que hayas generado
+/personal-timer-win32-x64/
+/zen-timer-win32-x64/
+/__msi-x64/

@@ -1,0 +1,95 @@
+body {
+  background: #f5f5f5;
+  color: #141414;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container {
+  width: 280px;
+  height: 180px;
+  padding: 8px;
+  background: #ffffff;
+  border: 2px solid #141414;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+#display {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #141414;
+  margin: 0.2rem 0;
+}
+
+input {
+  width: 100px;
+  height: 20px;
+  padding: 2px;
+  font-size: 0.7rem;
+  text-align: center;
+  border: 1px solid #141414;
+  border-radius: 4px;
+}
+
+.preset-buttons,
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.preset-buttons button,
+.buttons button {
+  flex: 1; /* Que ocupen espacio disponible de forma equitativa */
+  margin: 0 4px; /* Espaciado real entre botones */
+  padding: 4px 0;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.preset-buttons button {
+  background: transparent;
+  border: 1px solid #990000;
+  color: #141414;
+}
+
+.preset-buttons button:hover {
+  background: #990000;
+  color: white;
+}
+
+.buttons button {
+  background: #990000;
+  color: white;
+}
+
+.buttons button:hover {
+  background: #ffffff;
+  color: #141414;
+  border: 1px solid #141414;
+}
+
+.preset-buttons button:focus,
+.buttons button:focus {
+  outline: none;
+}
